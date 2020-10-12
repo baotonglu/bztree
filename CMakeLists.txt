@@ -61,6 +61,7 @@ add_definitions(-DBUILD_TESTS)
 message(STATUS "BUILD_TESTS: defined")
 
 ##################### PMwCAS #########################
+add_definitions(-DDESC_CAP=16)
 FetchContent_Declare(
         pmwcas
         GIT_REPOSITORY https://github.com/XiangpengHao/pmwcas.git
@@ -77,9 +78,9 @@ endif()
 
 ##################### PiBench #########################
 FetchContent_Declare(
-        pibench 
+        pibench
         GIT_REPOSITORY git@github.com:wangtzh/pibench.git
-        GIT_TAG master 
+        GIT_TAG master
 )
 if (NOT pibench_POPULATED)
   FetchContent_Populate(pibench)
