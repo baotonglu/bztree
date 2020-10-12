@@ -15,7 +15,7 @@
 ########################
 
 //Build tests and benchmarks based on gtest
-BUILD_APPS:BOOL=0
+BUILD_APPS:BOOL=1
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -216,7 +216,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 DESC_CAP:STRING=16
 
 //Use glog, gflags and gtest
-GOOGLE_FRAMEWORK:BOOL=0
+GOOGLE_FRAMEWORK:BOOL=1
 
 //PMDK lib install path
 PMDK_LIB_PATH:STRING=/usr/local/lib
@@ -226,6 +226,12 @@ PMEM_BACKEND:STRING=PMDK
 
 //Use RTM for installing descriptors
 WITH_RTM:BOOL=OFF
+
+//Dependencies for the target
+double-linked-list_LIB_DEPENDS:STATIC=general;GFlags;general;GLog;
+
+//Force gtest to use dynamic standard library
+gtest_force_shared_crt:BOOL=ON
 
 //Value Computed by CMake
 pmwcas_BINARY_DIR:STATIC=/home/baotong/bztree/build/pmwcas/src/PMWCAS-build
@@ -346,7 +352,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

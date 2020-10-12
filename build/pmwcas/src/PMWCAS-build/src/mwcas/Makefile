@@ -140,6 +140,75 @@ depend:
 	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/mwcas/CMakeFiles/mwcas_tests.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mwcas/CMakeFiles/mwcas_tests.dir/rule
+.PHONY : src/mwcas/CMakeFiles/mwcas_tests.dir/rule
+
+# Convenience name for target.
+mwcas_tests: src/mwcas/CMakeFiles/mwcas_tests.dir/rule
+
+.PHONY : mwcas_tests
+
+# fast build rule for target.
+mwcas_tests/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/build
+.PHONY : mwcas_tests/fast
+
+__/environment/environment_linux.o: __/environment/environment_linux.cc.o
+
+.PHONY : __/environment/environment_linux.o
+
+# target to build an object file
+__/environment/environment_linux.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/__/environment/environment_linux.cc.o
+.PHONY : __/environment/environment_linux.cc.o
+
+__/environment/environment_linux.i: __/environment/environment_linux.cc.i
+
+.PHONY : __/environment/environment_linux.i
+
+# target to preprocess a source file
+__/environment/environment_linux.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/__/environment/environment_linux.cc.i
+.PHONY : __/environment/environment_linux.cc.i
+
+__/environment/environment_linux.s: __/environment/environment_linux.cc.s
+
+.PHONY : __/environment/environment_linux.s
+
+# target to generate assembly for a file
+__/environment/environment_linux.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/__/environment/environment_linux.cc.s
+.PHONY : __/environment/environment_linux.cc.s
+
+mwcas_tests.o: mwcas_tests.cc.o
+
+.PHONY : mwcas_tests.o
+
+# target to build an object file
+mwcas_tests.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.o
+.PHONY : mwcas_tests.cc.o
+
+mwcas_tests.i: mwcas_tests.cc.i
+
+.PHONY : mwcas_tests.i
+
+# target to preprocess a source file
+mwcas_tests.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.i
+.PHONY : mwcas_tests.cc.i
+
+mwcas_tests.s: mwcas_tests.cc.s
+
+.PHONY : mwcas_tests.s
+
+# target to generate assembly for a file
+mwcas_tests.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.s
+.PHONY : mwcas_tests.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -149,6 +218,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... mwcas_tests"
+	@echo "... __/environment/environment_linux.o"
+	@echo "... __/environment/environment_linux.i"
+	@echo "... __/environment/environment_linux.s"
+	@echo "... mwcas_tests.o"
+	@echo "... mwcas_tests.i"
+	@echo "... mwcas_tests.s"
 .PHONY : help
 
 

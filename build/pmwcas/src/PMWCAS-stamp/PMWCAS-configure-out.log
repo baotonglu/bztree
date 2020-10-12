@@ -12,7 +12,7 @@
 -- Detecting CXX compile features - done
 -- Persistence support: PMDK
 -- Descirptor capacity: 16
--- GOOGLE_FRAMEWORK is not defined, will not use glog, gflags and gtest
+-- GOOGLE_FRAMEWORK is defined, will use glog, gflags and gtest
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/baotong/bztree/build/pmwcas/src/PMWCAS-build

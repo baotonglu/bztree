@@ -99,6 +99,10 @@ bztree_pibench_wrapper_EXTERNAL_OBJECTS =
 libbztree_pibench_wrapper.so: CMakeFiles/bztree_pibench_wrapper.dir/tests/bztree_pibench_wrapper.cc.o
 libbztree_pibench_wrapper.so: CMakeFiles/bztree_pibench_wrapper.dir/build.make
 libbztree_pibench_wrapper.so: libbztree_static.a
+libbztree_pibench_wrapper.so: _deps/glog-build/libglog.a
+libbztree_pibench_wrapper.so: /usr/lib/libunwind.so
+libbztree_pibench_wrapper.so: _deps/googletest-build/googlemock/gtest/libgtest_main.a
+libbztree_pibench_wrapper.so: _deps/googletest-build/googlemock/gtest/libgtest.a
 libbztree_pibench_wrapper.so: /usr/local/lib/libpmemobj.a
 libbztree_pibench_wrapper.so: CMakeFiles/bztree_pibench_wrapper.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/baotong/bztree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libbztree_pibench_wrapper.so"

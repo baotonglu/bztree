@@ -18,7 +18,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "APPS"
   "DESC_CAP=16"
+  "GOOGLE_FRAMEWORK"
   "PMDK"
   "PMEM"
   "pmwcas_EXPORTS"
@@ -26,6 +28,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "gtest/src/GTestExternal/googletest/include"
+  "gflags/src/GFlagsExternal-build/include"
+  "glog/src/GLogExternal/src"
+  "glog/src/GLogExternal-build"
   "/home/baotong/bztree/build/pmwcas/src/PMWCAS"
   "/home/baotong/bztree/build/pmwcas/src/PMWCAS/src"
   )

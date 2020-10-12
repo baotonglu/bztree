@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/usr/bin/cmake;-DPMEM_BACKEND=PMDK;-DCMAKE_BUILD_TYPE=Release;-DDESC_CAP=16;-DBUILD_APPS=0;-DGOOGLE_FRAMEWORK=0;-GUnix Makefiles;/home/baotong/bztree/build/pmwcas/src/PMWCAS")
+set(command "/usr/bin/cmake;-DPMEM_BACKEND=PMDK;-DCMAKE_BUILD_TYPE=Release;-DDESC_CAP=16;-DBUILD_APPS=1;-DGOOGLE_FRAMEWORK=1;-GUnix Makefiles;/home/baotong/bztree/build/pmwcas/src/PMWCAS")
 set(log_merged "")
 set(log_output_on_failure "")
 set(stdout_log "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-configure-out.log")

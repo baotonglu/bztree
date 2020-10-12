@@ -140,6 +140,75 @@ depend:
 	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/environment/CMakeFiles/environment_tests.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/environment/CMakeFiles/environment_tests.dir/rule
+.PHONY : src/environment/CMakeFiles/environment_tests.dir/rule
+
+# Convenience name for target.
+environment_tests: src/environment/CMakeFiles/environment_tests.dir/rule
+
+.PHONY : environment_tests
+
+# fast build rule for target.
+environment_tests/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/build
+.PHONY : environment_tests/fast
+
+environment_linux.o: environment_linux.cc.o
+
+.PHONY : environment_linux.o
+
+# target to build an object file
+environment_linux.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/environment_linux.cc.o
+.PHONY : environment_linux.cc.o
+
+environment_linux.i: environment_linux.cc.i
+
+.PHONY : environment_linux.i
+
+# target to preprocess a source file
+environment_linux.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/environment_linux.cc.i
+.PHONY : environment_linux.cc.i
+
+environment_linux.s: environment_linux.cc.s
+
+.PHONY : environment_linux.s
+
+# target to generate assembly for a file
+environment_linux.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/environment_linux.cc.s
+.PHONY : environment_linux.cc.s
+
+environment_tests.o: environment_tests.cc.o
+
+.PHONY : environment_tests.o
+
+# target to build an object file
+environment_tests.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/environment_tests.cc.o
+.PHONY : environment_tests.cc.o
+
+environment_tests.i: environment_tests.cc.i
+
+.PHONY : environment_tests.i
+
+# target to preprocess a source file
+environment_tests.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/environment_tests.cc.i
+.PHONY : environment_tests.cc.i
+
+environment_tests.s: environment_tests.cc.s
+
+.PHONY : environment_tests.s
+
+# target to generate assembly for a file
+environment_tests.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/environment_tests.cc.s
+.PHONY : environment_tests.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -149,6 +218,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... environment_tests"
+	@echo "... environment_linux.o"
+	@echo "... environment_linux.i"
+	@echo "... environment_linux.s"
+	@echo "... environment_tests.o"
+	@echo "... environment_tests.i"
+	@echo "... environment_tests.s"
 .PHONY : help
 
 

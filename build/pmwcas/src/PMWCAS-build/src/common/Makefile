@@ -140,6 +140,165 @@ depend:
 	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/common/CMakeFiles/epoch_test.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/common/CMakeFiles/epoch_test.dir/rule
+.PHONY : src/common/CMakeFiles/epoch_test.dir/rule
+
+# Convenience name for target.
+epoch_test: src/common/CMakeFiles/epoch_test.dir/rule
+
+.PHONY : epoch_test
+
+# fast build rule for target.
+epoch_test/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/build
+.PHONY : epoch_test/fast
+
+# Convenience name for target.
+src/common/CMakeFiles/garbage_list_test.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/common/CMakeFiles/garbage_list_test.dir/rule
+.PHONY : src/common/CMakeFiles/garbage_list_test.dir/rule
+
+# Convenience name for target.
+garbage_list_test: src/common/CMakeFiles/garbage_list_test.dir/rule
+
+.PHONY : garbage_list_test
+
+# fast build rule for target.
+garbage_list_test/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/build
+.PHONY : garbage_list_test/fast
+
+# Convenience name for target.
+src/common/CMakeFiles/allocator_internal_test.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/common/CMakeFiles/allocator_internal_test.dir/rule
+.PHONY : src/common/CMakeFiles/allocator_internal_test.dir/rule
+
+# Convenience name for target.
+allocator_internal_test: src/common/CMakeFiles/allocator_internal_test.dir/rule
+
+.PHONY : allocator_internal_test
+
+# fast build rule for target.
+allocator_internal_test/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/build
+.PHONY : allocator_internal_test/fast
+
+__/environment/environment_linux.o: __/environment/environment_linux.cc.o
+
+.PHONY : __/environment/environment_linux.o
+
+# target to build an object file
+__/environment/environment_linux.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/__/environment/environment_linux.cc.o
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/__/environment/environment_linux.cc.o
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/__/environment/environment_linux.cc.o
+.PHONY : __/environment/environment_linux.cc.o
+
+__/environment/environment_linux.i: __/environment/environment_linux.cc.i
+
+.PHONY : __/environment/environment_linux.i
+
+# target to preprocess a source file
+__/environment/environment_linux.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/__/environment/environment_linux.cc.i
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/__/environment/environment_linux.cc.i
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/__/environment/environment_linux.cc.i
+.PHONY : __/environment/environment_linux.cc.i
+
+__/environment/environment_linux.s: __/environment/environment_linux.cc.s
+
+.PHONY : __/environment/environment_linux.s
+
+# target to generate assembly for a file
+__/environment/environment_linux.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/__/environment/environment_linux.cc.s
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/__/environment/environment_linux.cc.s
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/__/environment/environment_linux.cc.s
+.PHONY : __/environment/environment_linux.cc.s
+
+allocator_internal_test.o: allocator_internal_test.cc.o
+
+.PHONY : allocator_internal_test.o
+
+# target to build an object file
+allocator_internal_test.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/allocator_internal_test.cc.o
+.PHONY : allocator_internal_test.cc.o
+
+allocator_internal_test.i: allocator_internal_test.cc.i
+
+.PHONY : allocator_internal_test.i
+
+# target to preprocess a source file
+allocator_internal_test.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/allocator_internal_test.cc.i
+.PHONY : allocator_internal_test.cc.i
+
+allocator_internal_test.s: allocator_internal_test.cc.s
+
+.PHONY : allocator_internal_test.s
+
+# target to generate assembly for a file
+allocator_internal_test.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/allocator_internal_test.cc.s
+.PHONY : allocator_internal_test.cc.s
+
+epoch_test.o: epoch_test.cc.o
+
+.PHONY : epoch_test.o
+
+# target to build an object file
+epoch_test.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/epoch_test.cc.o
+.PHONY : epoch_test.cc.o
+
+epoch_test.i: epoch_test.cc.i
+
+.PHONY : epoch_test.i
+
+# target to preprocess a source file
+epoch_test.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/epoch_test.cc.i
+.PHONY : epoch_test.cc.i
+
+epoch_test.s: epoch_test.cc.s
+
+.PHONY : epoch_test.s
+
+# target to generate assembly for a file
+epoch_test.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/epoch_test.cc.s
+.PHONY : epoch_test.cc.s
+
+garbage_list_test.o: garbage_list_test.cc.o
+
+.PHONY : garbage_list_test.o
+
+# target to build an object file
+garbage_list_test.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/garbage_list_test.cc.o
+.PHONY : garbage_list_test.cc.o
+
+garbage_list_test.i: garbage_list_test.cc.i
+
+.PHONY : garbage_list_test.i
+
+# target to preprocess a source file
+garbage_list_test.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/garbage_list_test.cc.i
+.PHONY : garbage_list_test.cc.i
+
+garbage_list_test.s: garbage_list_test.cc.s
+
+.PHONY : garbage_list_test.s
+
+# target to generate assembly for a file
+garbage_list_test.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/garbage_list_test.cc.s
+.PHONY : garbage_list_test.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -149,6 +308,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... allocator_internal_test"
+	@echo "... epoch_test"
+	@echo "... garbage_list_test"
+	@echo "... __/environment/environment_linux.o"
+	@echo "... __/environment/environment_linux.i"
+	@echo "... __/environment/environment_linux.s"
+	@echo "... allocator_internal_test.o"
+	@echo "... allocator_internal_test.i"
+	@echo "... allocator_internal_test.s"
+	@echo "... epoch_test.o"
+	@echo "... epoch_test.i"
+	@echo "... epoch_test.s"
+	@echo "... garbage_list_test.o"
+	@echo "... garbage_list_test.i"
+	@echo "... garbage_list_test.s"
 .PHONY : help
 
 

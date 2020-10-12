@@ -140,6 +140,165 @@ depend:
 	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/rule
+.PHONY : src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/rule
+
+# Convenience name for target.
+doubly_linked_list_benchmark: src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/rule
+
+.PHONY : doubly_linked_list_benchmark
+
+# fast build rule for target.
+doubly_linked_list_benchmark/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build
+.PHONY : doubly_linked_list_benchmark/fast
+
+# Convenience name for target.
+src/benchmarks/CMakeFiles/mwcas_shm_server.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/benchmarks/CMakeFiles/mwcas_shm_server.dir/rule
+.PHONY : src/benchmarks/CMakeFiles/mwcas_shm_server.dir/rule
+
+# Convenience name for target.
+mwcas_shm_server: src/benchmarks/CMakeFiles/mwcas_shm_server.dir/rule
+
+.PHONY : mwcas_shm_server
+
+# fast build rule for target.
+mwcas_shm_server/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build
+.PHONY : mwcas_shm_server/fast
+
+# Convenience name for target.
+src/benchmarks/CMakeFiles/mwcas_benchmark.dir/rule:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/benchmarks/CMakeFiles/mwcas_benchmark.dir/rule
+.PHONY : src/benchmarks/CMakeFiles/mwcas_benchmark.dir/rule
+
+# Convenience name for target.
+mwcas_benchmark: src/benchmarks/CMakeFiles/mwcas_benchmark.dir/rule
+
+.PHONY : mwcas_benchmark
+
+# fast build rule for target.
+mwcas_benchmark/fast:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build
+.PHONY : mwcas_benchmark/fast
+
+__/environment/environment_linux.o: __/environment/environment_linux.cc.o
+
+.PHONY : __/environment/environment_linux.o
+
+# target to build an object file
+__/environment/environment_linux.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/__/environment/environment_linux.cc.o
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/__/environment/environment_linux.cc.o
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/__/environment/environment_linux.cc.o
+.PHONY : __/environment/environment_linux.cc.o
+
+__/environment/environment_linux.i: __/environment/environment_linux.cc.i
+
+.PHONY : __/environment/environment_linux.i
+
+# target to preprocess a source file
+__/environment/environment_linux.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/__/environment/environment_linux.cc.i
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/__/environment/environment_linux.cc.i
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/__/environment/environment_linux.cc.i
+.PHONY : __/environment/environment_linux.cc.i
+
+__/environment/environment_linux.s: __/environment/environment_linux.cc.s
+
+.PHONY : __/environment/environment_linux.s
+
+# target to generate assembly for a file
+__/environment/environment_linux.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/__/environment/environment_linux.cc.s
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/__/environment/environment_linux.cc.s
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/__/environment/environment_linux.cc.s
+.PHONY : __/environment/environment_linux.cc.s
+
+doubly_linked_list_benchmark.o: doubly_linked_list_benchmark.cc.o
+
+.PHONY : doubly_linked_list_benchmark.o
+
+# target to build an object file
+doubly_linked_list_benchmark.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/doubly_linked_list_benchmark.cc.o
+.PHONY : doubly_linked_list_benchmark.cc.o
+
+doubly_linked_list_benchmark.i: doubly_linked_list_benchmark.cc.i
+
+.PHONY : doubly_linked_list_benchmark.i
+
+# target to preprocess a source file
+doubly_linked_list_benchmark.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/doubly_linked_list_benchmark.cc.i
+.PHONY : doubly_linked_list_benchmark.cc.i
+
+doubly_linked_list_benchmark.s: doubly_linked_list_benchmark.cc.s
+
+.PHONY : doubly_linked_list_benchmark.s
+
+# target to generate assembly for a file
+doubly_linked_list_benchmark.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/doubly_linked_list_benchmark.cc.s
+.PHONY : doubly_linked_list_benchmark.cc.s
+
+mwcas_benchmark.o: mwcas_benchmark.cc.o
+
+.PHONY : mwcas_benchmark.o
+
+# target to build an object file
+mwcas_benchmark.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/mwcas_benchmark.cc.o
+.PHONY : mwcas_benchmark.cc.o
+
+mwcas_benchmark.i: mwcas_benchmark.cc.i
+
+.PHONY : mwcas_benchmark.i
+
+# target to preprocess a source file
+mwcas_benchmark.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/mwcas_benchmark.cc.i
+.PHONY : mwcas_benchmark.cc.i
+
+mwcas_benchmark.s: mwcas_benchmark.cc.s
+
+.PHONY : mwcas_benchmark.s
+
+# target to generate assembly for a file
+mwcas_benchmark.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/mwcas_benchmark.cc.s
+.PHONY : mwcas_benchmark.cc.s
+
+mwcas_shm_server.o: mwcas_shm_server.cc.o
+
+.PHONY : mwcas_shm_server.o
+
+# target to build an object file
+mwcas_shm_server.cc.o:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/mwcas_shm_server.cc.o
+.PHONY : mwcas_shm_server.cc.o
+
+mwcas_shm_server.i: mwcas_shm_server.cc.i
+
+.PHONY : mwcas_shm_server.i
+
+# target to preprocess a source file
+mwcas_shm_server.cc.i:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/mwcas_shm_server.cc.i
+.PHONY : mwcas_shm_server.cc.i
+
+mwcas_shm_server.s: mwcas_shm_server.cc.s
+
+.PHONY : mwcas_shm_server.s
+
+# target to generate assembly for a file
+mwcas_shm_server.cc.s:
+	cd /home/baotong/bztree/build/pmwcas/src/PMWCAS-build && $(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/mwcas_shm_server.cc.s
+.PHONY : mwcas_shm_server.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -149,6 +308,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... doubly_linked_list_benchmark"
+	@echo "... mwcas_benchmark"
+	@echo "... mwcas_shm_server"
+	@echo "... __/environment/environment_linux.o"
+	@echo "... __/environment/environment_linux.i"
+	@echo "... __/environment/environment_linux.s"
+	@echo "... doubly_linked_list_benchmark.o"
+	@echo "... doubly_linked_list_benchmark.i"
+	@echo "... doubly_linked_list_benchmark.s"
+	@echo "... mwcas_benchmark.o"
+	@echo "... mwcas_benchmark.i"
+	@echo "... mwcas_benchmark.s"
+	@echo "... mwcas_shm_server.o"
+	@echo "... mwcas_shm_server.i"
+	@echo "... mwcas_shm_server.s"
 .PHONY : help
 
 

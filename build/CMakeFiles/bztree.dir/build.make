@@ -98,7 +98,11 @@ bztree_EXTERNAL_OBJECTS =
 
 libbztree.so: CMakeFiles/bztree.dir/bztree.cc.o
 libbztree.so: CMakeFiles/bztree.dir/build.make
+libbztree.so: _deps/glog-build/libglog.a
+libbztree.so: _deps/googletest-build/googlemock/gtest/libgtest_main.a
 libbztree.so: /usr/local/lib/libpmemobj.a
+libbztree.so: /usr/lib/libunwind.so
+libbztree.so: _deps/googletest-build/googlemock/gtest/libgtest.a
 libbztree.so: CMakeFiles/bztree.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/baotong/bztree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libbztree.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bztree.dir/link.txt --verbose=$(VERBOSE)

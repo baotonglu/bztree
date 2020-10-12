@@ -24,7 +24,7 @@ BUILD_SHARED_LIBS:BOOL=OFF
 BUILD_TESTING:BOOL=ON
 
 //No help, variable specified on the command line.
-BUILD_TESTS:UNINITIALIZED=0
+BUILD_TESTS:UNINITIALIZED=1
 
 //Build test cases using gflags, glog and gtest
 BUILD_TESTS,:BOOL=ON
@@ -404,7 +404,7 @@ GITCOMMAND:FILEPATH=/usr/bin/git
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //Use glog, gflags and gtest
-GOOGLE_FRAMEWORK:BOOL=0
+GOOGLE_FRAMEWORK:BOOL=1
 
 //Path to a program.
 HGCOMMAND:FILEPATH=HGCOMMAND-NOTFOUND
@@ -468,7 +468,7 @@ WITH_TLS:BOOL=ON
 bztree_BINARY_DIR:STATIC=/home/baotong/bztree/build
 
 //Dependencies for the target
-bztree_LIB_DEPENDS:STATIC=general;-lnuma -lpthread -pthread -lrt;general;pmwcas;general;pmemobj;
+bztree_LIB_DEPENDS:STATIC=general;-lnuma -lpthread -pthread -lrt;general;pmwcas;general;glog::glog;general;gtest_main;general;pmemobj;
 
 //Value Computed by CMake
 bztree_SOURCE_DIR:STATIC=/home/baotong/bztree
@@ -477,7 +477,7 @@ bztree_SOURCE_DIR:STATIC=/home/baotong/bztree
 bztree_pibench_wrapper_LIB_DEPENDS:STATIC=general;-lnuma -lpthread -pthread -lrt;general;bztree_static;
 
 //Dependencies for the target
-bztree_static_LIB_DEPENDS:STATIC=general;-lnuma -lpthread -pthread -lrt;general;pmwcas;general;pmemobj;
+bztree_static_LIB_DEPENDS:STATIC=general;-lnuma -lpthread -pthread -lrt;general;pmwcas;general;glog::glog;general;gtest_main;general;pmemobj;
 
 //Value Computed by CMake
 glog_BINARY_DIR:STATIC=/home/baotong/bztree/build/_deps/glog-build
@@ -559,6 +559,8 @@ CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
+//ADVANCED property for variable: CMAKE_CTEST_COMMAND
+CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -683,7 +685,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

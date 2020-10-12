@@ -49,6 +49,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/baotong/bztree/build/pmwcas/src/PMWCAS-build/src/common/cmake_install.cmake")
   include("/home/baotong/bztree/build/pmwcas/src/PMWCAS-build/src/benchmarks/cmake_install.cmake")
   include("/home/baotong/bztree/build/pmwcas/src/PMWCAS-build/src/mwcas/cmake_install.cmake")
+  include("/home/baotong/bztree/build/pmwcas/src/PMWCAS-build/src/double-linked-list/cmake_install.cmake")
 
 endif()
 

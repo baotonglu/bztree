@@ -1,0 +1,41 @@
+/usr/bin/ld: ../../libdouble-linked-list.a(doubly_linked_list.cc.o): in function `pmwcas::MwCASDList::Delete(pmwcas::DListNode*, bool)':
+doubly_linked_list.cc:(.text+0x3e5): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: doubly_linked_list.cc:(.text+0x4ad): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: doubly_linked_list.cc:(.text+0x781): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: ../../libdouble-linked-list.a(doubly_linked_list.cc.o): in function `pmwcas::MwCASDList::InsertBefore(pmwcas::DListNode*, pmwcas::DListNode*, bool)':
+doubly_linked_list.cc:(.text+0xc41): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: doubly_linked_list.cc:(.text+0xd16): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: ../../libdouble-linked-list.a(doubly_linked_list.cc.o):doubly_linked_list.cc:(.text+0xebc): more undefined references to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)' follow
+collect2: error: ld returned 1 exit status
+make[5]: *** [src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make:125: doubly_linked_list_benchmark] Error 1
+make[4]: *** [CMakeFiles/Makefile2:498: src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/all] Error 2
+make[4]: *** Waiting for unfinished jobs....
+/usr/bin/ld: CMakeFiles/mwcas_benchmark.dir/mwcas_benchmark.cc.o: in function `pmwcas::MwCas::Main(unsigned long)':
+mwcas_benchmark.cc:(.text._ZN6pmwcas5MwCas4MainEm[_ZN6pmwcas5MwCas4MainEm]+0x459): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: mwcas_benchmark.cc:(.text._ZN6pmwcas5MwCas4MainEm[_ZN6pmwcas5MwCas4MainEm]+0x5cd): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+collect2: error: ld returned 1 exit status
+make[5]: *** [src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make:125: mwcas_benchmark] Error 1
+make[4]: *** [CMakeFiles/Makefile2:558: src/benchmarks/CMakeFiles/mwcas_benchmark.dir/all] Error 2
+/usr/bin/ld: CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.o: in function `pmwcas::PMwCASTest_SingleThreadedUpdateSuccess_Test::TestBody()':
+mwcas_tests.cc:(.text+0x1e1a): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: mwcas_tests.cc:(.text+0x1f5a): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.o: in function `pmwcas::PMwCASTest_SingleThreadedConflict_Test::TestBody()':
+mwcas_tests.cc:(.text+0x286f): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: mwcas_tests.cc:(.text+0x29f8): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.o: in function `pmwcas::PMwCASTest_SingleThreadedRecovery_Test::TestBody()':
+mwcas_tests.cc:(.text+0x32db): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+collect2: error: ld returned 1 exit status
+make[5]: *** [src/mwcas/CMakeFiles/mwcas_tests.dir/build.make:123: mwcas_tests] Error 1
+make[4]: *** [CMakeFiles/Makefile2:588: src/mwcas/CMakeFiles/mwcas_tests.dir/all] Error 2
+/usr/bin/ld: ../../libdouble-linked-list.a(doubly_linked_list.cc.o): in function `pmwcas::MwCASDList::Delete(pmwcas::DListNode*, bool)':
+doubly_linked_list.cc:(.text+0x3e5): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: doubly_linked_list.cc:(.text+0x4ad): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: doubly_linked_list.cc:(.text+0x781): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: ../../libdouble-linked-list.a(doubly_linked_list.cc.o): in function `pmwcas::MwCASDList::InsertBefore(pmwcas::DListNode*, pmwcas::DListNode*, bool)':
+doubly_linked_list.cc:(.text+0xc41): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: doubly_linked_list.cc:(.text+0xd16): undefined reference to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)'
+/usr/bin/ld: ../../libdouble-linked-list.a(doubly_linked_list.cc.o):doubly_linked_list.cc:(.text+0xebc): more undefined references to `pmwcas::Descriptor::PersistentMwCAS(unsigned int)' follow
+collect2: error: ld returned 1 exit status
+make[5]: *** [src/double-linked-list/CMakeFiles/doubly_linked_list_tests.dir/build.make:123: doubly_linked_list_tests] Error 1
+make[4]: *** [CMakeFiles/Makefile2:618: src/double-linked-list/CMakeFiles/doubly_linked_list_tests.dir/all] Error 2
+make[3]: *** [Makefile:114: all] Error 2

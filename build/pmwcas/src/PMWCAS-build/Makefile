@@ -166,6 +166,175 @@ pmwcas/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pmwcas.dir/build.make CMakeFiles/pmwcas.dir/build
 .PHONY : pmwcas/fast
 
+#=============================================================================
+# Target rules for targets named GLogExternal
+
+# Build rule for target.
+GLogExternal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GLogExternal
+.PHONY : GLogExternal
+
+# fast build rule for target.
+GLogExternal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLogExternal.dir/build.make CMakeFiles/GLogExternal.dir/build
+.PHONY : GLogExternal/fast
+
+#=============================================================================
+# Target rules for targets named GFlagsExternal
+
+# Build rule for target.
+GFlagsExternal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GFlagsExternal
+.PHONY : GFlagsExternal
+
+# fast build rule for target.
+GFlagsExternal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GFlagsExternal.dir/build.make CMakeFiles/GFlagsExternal.dir/build
+.PHONY : GFlagsExternal/fast
+
+#=============================================================================
+# Target rules for targets named GTestExternal
+
+# Build rule for target.
+GTestExternal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GTestExternal
+.PHONY : GTestExternal
+
+# fast build rule for target.
+GTestExternal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestExternal.dir/build.make CMakeFiles/GTestExternal.dir/build
+.PHONY : GTestExternal/fast
+
+#=============================================================================
+# Target rules for targets named environment_tests
+
+# Build rule for target.
+environment_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 environment_tests
+.PHONY : environment_tests
+
+# fast build rule for target.
+environment_tests/fast:
+	$(MAKE) $(MAKESILENT) -f src/environment/CMakeFiles/environment_tests.dir/build.make src/environment/CMakeFiles/environment_tests.dir/build
+.PHONY : environment_tests/fast
+
+#=============================================================================
+# Target rules for targets named epoch_test
+
+# Build rule for target.
+epoch_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 epoch_test
+.PHONY : epoch_test
+
+# fast build rule for target.
+epoch_test/fast:
+	$(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/epoch_test.dir/build.make src/common/CMakeFiles/epoch_test.dir/build
+.PHONY : epoch_test/fast
+
+#=============================================================================
+# Target rules for targets named garbage_list_test
+
+# Build rule for target.
+garbage_list_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 garbage_list_test
+.PHONY : garbage_list_test
+
+# fast build rule for target.
+garbage_list_test/fast:
+	$(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/garbage_list_test.dir/build.make src/common/CMakeFiles/garbage_list_test.dir/build
+.PHONY : garbage_list_test/fast
+
+#=============================================================================
+# Target rules for targets named allocator_internal_test
+
+# Build rule for target.
+allocator_internal_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 allocator_internal_test
+.PHONY : allocator_internal_test
+
+# fast build rule for target.
+allocator_internal_test/fast:
+	$(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/allocator_internal_test.dir/build.make src/common/CMakeFiles/allocator_internal_test.dir/build
+.PHONY : allocator_internal_test/fast
+
+#=============================================================================
+# Target rules for targets named doubly_linked_list_benchmark
+
+# Build rule for target.
+doubly_linked_list_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doubly_linked_list_benchmark
+.PHONY : doubly_linked_list_benchmark
+
+# fast build rule for target.
+doubly_linked_list_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build.make src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/build
+.PHONY : doubly_linked_list_benchmark/fast
+
+#=============================================================================
+# Target rules for targets named mwcas_shm_server
+
+# Build rule for target.
+mwcas_shm_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mwcas_shm_server
+.PHONY : mwcas_shm_server
+
+# fast build rule for target.
+mwcas_shm_server/fast:
+	$(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build.make src/benchmarks/CMakeFiles/mwcas_shm_server.dir/build
+.PHONY : mwcas_shm_server/fast
+
+#=============================================================================
+# Target rules for targets named mwcas_benchmark
+
+# Build rule for target.
+mwcas_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mwcas_benchmark
+.PHONY : mwcas_benchmark
+
+# fast build rule for target.
+mwcas_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build.make src/benchmarks/CMakeFiles/mwcas_benchmark.dir/build
+.PHONY : mwcas_benchmark/fast
+
+#=============================================================================
+# Target rules for targets named mwcas_tests
+
+# Build rule for target.
+mwcas_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mwcas_tests
+.PHONY : mwcas_tests
+
+# fast build rule for target.
+mwcas_tests/fast:
+	$(MAKE) $(MAKESILENT) -f src/mwcas/CMakeFiles/mwcas_tests.dir/build.make src/mwcas/CMakeFiles/mwcas_tests.dir/build
+.PHONY : mwcas_tests/fast
+
+#=============================================================================
+# Target rules for targets named doubly_linked_list_tests
+
+# Build rule for target.
+doubly_linked_list_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doubly_linked_list_tests
+.PHONY : doubly_linked_list_tests
+
+# fast build rule for target.
+doubly_linked_list_tests/fast:
+	$(MAKE) $(MAKESILENT) -f src/double-linked-list/CMakeFiles/doubly_linked_list_tests.dir/build.make src/double-linked-list/CMakeFiles/doubly_linked_list_tests.dir/build
+.PHONY : doubly_linked_list_tests/fast
+
+#=============================================================================
+# Target rules for targets named double-linked-list
+
+# Build rule for target.
+double-linked-list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 double-linked-list
+.PHONY : double-linked-list
+
+# fast build rule for target.
+double-linked-list/fast:
+	$(MAKE) $(MAKESILENT) -f src/double-linked-list/CMakeFiles/double-linked-list.dir/build.make src/double-linked-list/CMakeFiles/double-linked-list.dir/build
+.PHONY : double-linked-list/fast
+
 src/common/allocator_internal.o: src/common/allocator_internal.cc.o
 
 .PHONY : src/common/allocator_internal.o
@@ -445,6 +614,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... GFlagsExternal"
+	@echo "... GLogExternal"
+	@echo "... GTestExternal"
+	@echo "... allocator_internal_test"
+	@echo "... double-linked-list"
+	@echo "... doubly_linked_list_benchmark"
+	@echo "... doubly_linked_list_tests"
+	@echo "... environment_tests"
+	@echo "... epoch_test"
+	@echo "... garbage_list_test"
+	@echo "... mwcas_benchmark"
+	@echo "... mwcas_shm_server"
+	@echo "... mwcas_tests"
 	@echo "... pmwcas"
 	@echo "... pmwcas_static"
 	@echo "... src/common/allocator_internal.o"

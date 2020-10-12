@@ -9,6 +9,13 @@ CMakeFiles/pmwcas.dir/src/common/allocator_internal.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/common/allocator_internal.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/auto_ptr.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
 CMakeFiles/pmwcas.dir/src/common/environment_internal.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -22,6 +29,13 @@ CMakeFiles/pmwcas.dir/src/common/environment_internal.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/environment/environment_windows.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/auto_ptr.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
 CMakeFiles/pmwcas.dir/src/common/epoch.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -37,6 +51,14 @@ CMakeFiles/pmwcas.dir/src/common/epoch.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/auto_ptr.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/hash.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
+ gtest/src/GTestExternal/googletest/include/gtest/gtest_prod.h
 CMakeFiles/pmwcas.dir/src/common/pmwcas_internal.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -51,6 +73,13 @@ CMakeFiles/pmwcas.dir/src/common/pmwcas_internal.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/environment/environment_windows.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/auto_ptr.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
 CMakeFiles/pmwcas.dir/src/environment/environment.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -63,6 +92,13 @@ CMakeFiles/pmwcas.dir/src/environment/environment.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/environment/environment_windows.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/auto_ptr.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
 CMakeFiles/pmwcas.dir/src/environment/environment_linux.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -75,6 +111,13 @@ CMakeFiles/pmwcas.dir/src/environment/environment_linux.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/environment/environment_windows.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/auto_ptr.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
 CMakeFiles/pmwcas.dir/src/mwcas/mwcas.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -97,6 +140,14 @@ CMakeFiles/pmwcas.dir/src/mwcas/mwcas.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/core_local.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/nvram.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
+ gtest/src/GTestExternal/googletest/include/gtest/gtest_prod.h
 CMakeFiles/pmwcas.dir/src/util/nvram.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/allocator.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/async.h
@@ -110,6 +161,13 @@ CMakeFiles/pmwcas.dir/src/util/nvram.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/macros.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/nvram.cc
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/src/util/nvram.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_declare.h
+ gflags/src/GFlagsExternal-build/include/gflags/gflags_gflags.h
+ glog/src/GLogExternal-build/glog/logging.h
+ glog/src/GLogExternal-build/glog/raw_logging.h
+ glog/src/GLogExternal-build/glog/vlog_is_on.h
+ glog/src/GLogExternal/src/glog/log_severity.h
 CMakeFiles/pmwcas.dir/src/util/status.cc.o
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/slice.h
  /home/baotong/bztree/build/pmwcas/src/PMWCAS/include/status.h

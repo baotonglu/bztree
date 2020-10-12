@@ -1,24 +1,108 @@
+[35m[1mScanning dependencies of target GTestExternal[0m
+[35m[1mScanning dependencies of target GFlagsExternal[0m
 [35m[1mScanning dependencies of target pmwcas_static[0m
+[  1%] [34m[1mCreating directories for 'GFlagsExternal'[0m
+[  2%] [34m[1mCreating directories for 'GTestExternal'[0m
+[  4%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/util/status.cc.o[0m
 [  5%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/util/nvram.cc.o[0m
-[ 10%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/util/status.cc.o[0m
-[ 15%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/environment/environment.cc.o[0m
-[ 20%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/allocator_internal.cc.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/pmwcas_internal.cc.o[0m
-[ 30%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/environment_internal.cc.o[0m
-[ 35%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/epoch.cc.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/mwcas/mwcas.cc.o[0m
-[ 45%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/environment/environment_linux.cc.o[0m
-[ 50%] [32m[1mLinking CXX static library libpmwcas_static.a[0m
-[ 50%] Built target pmwcas_static
+[  6%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/environment/environment.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/epoch.cc.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/environment/environment_linux.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/allocator_internal.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/pmwcas_internal.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/common/environment_internal.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/pmwcas_static.dir/src/mwcas/mwcas.cc.o[0m
+[ 16%] [34m[1mPerforming download step (DIR copy) for 'GTestExternal'[0m
+[ 17%] [34m[1mPerforming download step (DIR copy) for 'GFlagsExternal'[0m
+-- GTestExternal download command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/gtest/src/GTestExternal-stamp/GTestExternal-download-*.log
+-- GFlagsExternal download command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/gflags/src/GFlagsExternal-stamp/GFlagsExternal-download-*.log
+[ 19%] [34m[1mNo update step for 'GTestExternal'[0m
+[ 20%] [34m[1mNo patch step for 'GTestExternal'[0m
+[ 21%] [34m[1mNo update step for 'GFlagsExternal'[0m
+[ 23%] [34m[1mPerforming configure step for 'GTestExternal'[0m
+[ 24%] [34m[1mNo patch step for 'GFlagsExternal'[0m
+[ 26%] [34m[1mPerforming configure step for 'GFlagsExternal'[0m
+-- GTestExternal configure command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/gtest/src/GTestExternal-stamp/GTestExternal-configure-*.log
+[ 27%] [34m[1mPerforming build step for 'GTestExternal'[0m
+[ 28%] [32m[1mLinking CXX static library libpmwcas_static.a[0m
+[ 28%] Built target pmwcas_static
+-- GFlagsExternal configure command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/gflags/src/GFlagsExternal-stamp/GFlagsExternal-configure-*.log
+[ 30%] [34m[1mPerforming build step for 'GFlagsExternal'[0m
+-- GFlagsExternal build command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/gflags/src/GFlagsExternal-stamp/GFlagsExternal-build-*.log
+[ 31%] [34m[1mNo install step for 'GFlagsExternal'[0m
+[ 32%] [34m[1mCompleted 'GFlagsExternal'[0m
+[ 32%] Built target GFlagsExternal
+[35m[1mScanning dependencies of target GLogExternal[0m
+[ 34%] [34m[1mCreating directories for 'GLogExternal'[0m
+[ 35%] [34m[1mPerforming download step (DIR copy) for 'GLogExternal'[0m
+-- GLogExternal download command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/glog/src/GLogExternal-stamp/GLogExternal-download-*.log
+[ 36%] [34m[1mNo update step for 'GLogExternal'[0m
+[ 38%] [34m[1mNo patch step for 'GLogExternal'[0m
+[ 39%] [34m[1mPerforming configure step for 'GLogExternal'[0m
+-- GTestExternal build command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/gtest/src/GTestExternal-stamp/GTestExternal-build-*.log
+[ 41%] [34m[1mNo install step for 'GTestExternal'[0m
+[ 42%] [34m[1mCompleted 'GTestExternal'[0m
+[ 42%] Built target GTestExternal
+-- GLogExternal configure command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/glog/src/GLogExternal-stamp/GLogExternal-configure-*.log
+[ 43%] [34m[1mPerforming build step for 'GLogExternal'[0m
+-- GLogExternal build command succeeded.  See also /home/baotong/bztree/build/pmwcas/src/PMWCAS-build/glog/src/GLogExternal-stamp/GLogExternal-build-*.log
+[ 45%] [34m[1mNo install step for 'GLogExternal'[0m
+[ 46%] [34m[1mCompleted 'GLogExternal'[0m
+[ 46%] Built target GLogExternal
+[35m[1mScanning dependencies of target double-linked-list[0m
 [35m[1mScanning dependencies of target pmwcas[0m
-[ 55%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/util/nvram.cc.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/util/status.cc.o[0m
-[ 65%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/environment/environment.cc.o[0m
-[ 70%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/allocator_internal.cc.o[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/pmwcas_internal.cc.o[0m
-[ 80%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/environment_internal.cc.o[0m
-[ 85%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/epoch.cc.o[0m
-[ 90%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/mwcas/mwcas.cc.o[0m
-[ 95%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/environment/environment_linux.cc.o[0m
-[100%] [32m[1mLinking CXX shared library libpmwcas.so[0m
-[100%] Built target pmwcas
+[ 47%] [32mBuilding CXX object src/double-linked-list/CMakeFiles/double-linked-list.dir/doubly_linked_list.cc.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/util/nvram.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/environment_internal.cc.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/allocator_internal.cc.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/util/status.cc.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/environment/environment.cc.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/pmwcas_internal.cc.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/environment/environment_linux.cc.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/common/epoch.cc.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/pmwcas.dir/src/mwcas/mwcas.cc.o[0m
+[ 61%] [32m[1mLinking CXX shared library libpmwcas.so[0m
+[ 63%] [32m[1mLinking CXX static library ../../libdouble-linked-list.a[0m
+[ 63%] Built target pmwcas
+[ 63%] Built target double-linked-list
+[35m[1mScanning dependencies of target environment_tests[0m
+[35m[1mScanning dependencies of target mwcas_benchmark[0m
+[35m[1mScanning dependencies of target garbage_list_test[0m
+[35m[1mScanning dependencies of target mwcas_shm_server[0m
+[35m[1mScanning dependencies of target mwcas_tests[0m
+[35m[1mScanning dependencies of target allocator_internal_test[0m
+[35m[1mScanning dependencies of target doubly_linked_list_benchmark[0m
+[35m[1mScanning dependencies of target epoch_test[0m
+[35m[1mScanning dependencies of target doubly_linked_list_tests[0m
+[ 64%] [32mBuilding CXX object src/common/CMakeFiles/garbage_list_test.dir/__/environment/environment_linux.cc.o[0m
+[ 65%] [32mBuilding CXX object src/environment/CMakeFiles/environment_tests.dir/environment_linux.cc.o[0m
+[ 67%] [32mBuilding CXX object src/benchmarks/CMakeFiles/mwcas_benchmark.dir/mwcas_benchmark.cc.o[0m
+[ 68%] [32mBuilding CXX object src/benchmarks/CMakeFiles/mwcas_shm_server.dir/__/environment/environment_linux.cc.o[0m
+[ 69%] [32mBuilding CXX object src/benchmarks/CMakeFiles/mwcas_benchmark.dir/__/environment/environment_linux.cc.o[0m
+[ 71%] [32mBuilding CXX object src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/doubly_linked_list_benchmark.cc.o[0m
+[ 72%] [32mBuilding CXX object src/benchmarks/CMakeFiles/mwcas_shm_server.dir/mwcas_shm_server.cc.o[0m
+[ 73%] [32mBuilding CXX object src/environment/CMakeFiles/environment_tests.dir/environment_tests.cc.o[0m
+[ 75%] [32mBuilding CXX object src/common/CMakeFiles/allocator_internal_test.dir/allocator_internal_test.cc.o[0m
+[ 76%] [32mBuilding CXX object src/common/CMakeFiles/epoch_test.dir/epoch_test.cc.o[0m
+[ 78%] [32mBuilding CXX object src/common/CMakeFiles/garbage_list_test.dir/garbage_list_test.cc.o[0m
+[ 79%] [32mBuilding CXX object src/common/CMakeFiles/allocator_internal_test.dir/__/environment/environment_linux.cc.o[0m
+[ 80%] [32mBuilding CXX object src/mwcas/CMakeFiles/mwcas_tests.dir/mwcas_tests.cc.o[0m
+[ 82%] [32mBuilding CXX object src/double-linked-list/CMakeFiles/doubly_linked_list_tests.dir/__/environment/environment_linux.cc.o[0m
+[ 83%] [32mBuilding CXX object src/double-linked-list/CMakeFiles/doubly_linked_list_tests.dir/doubly_linked_list_tests.cc.o[0m
+[ 84%] [32mBuilding CXX object src/common/CMakeFiles/epoch_test.dir/__/environment/environment_linux.cc.o[0m
+[ 86%] [32mBuilding CXX object src/benchmarks/CMakeFiles/doubly_linked_list_benchmark.dir/__/environment/environment_linux.cc.o[0m
+[ 87%] [32mBuilding CXX object src/mwcas/CMakeFiles/mwcas_tests.dir/__/environment/environment_linux.cc.o[0m
+[ 89%] [32m[1mLinking CXX executable ../../allocator_internal_test[0m
+[ 90%] [32m[1mLinking CXX executable ../../mwcas_shm_server[0m
+[ 90%] Built target allocator_internal_test
+[ 90%] Built target mwcas_shm_server
+[ 91%] [32m[1mLinking CXX executable ../../environment_tests[0m
+[ 93%] [32m[1mLinking CXX executable ../../doubly_linked_list_benchmark[0m
+[ 94%] [32m[1mLinking CXX executable ../../garbage_list_test[0m
+[ 94%] Built target environment_tests
+[ 95%] [32m[1mLinking CXX executable ../../mwcas_benchmark[0m
+[ 97%] [32m[1mLinking CXX executable ../../mwcas_tests[0m
+[ 97%] Built target garbage_list_test
+[ 98%] [32m[1mLinking CXX executable ../../epoch_test[0m
+[100%] [32m[1mLinking CXX executable ../../doubly_linked_list_tests[0m
+[100%] Built target epoch_test
