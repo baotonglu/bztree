@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++14 -Ofast -march=native -O3 -DNDEBUG -shared -Wl,-soname,libbztree.so -o libbztree.so CMakeFiles/bztree.dir/bztree.cc.o   -L/home/baotong/bztree/build/pmwcas/src/PMWCAS-build  -Wl,-rpath,/home/baotong/bztree/build/pmwcas/src/PMWCAS-build -lnuma -lpthread -pthread -lrt -lpmwcas /usr/local/lib/libpmemobj.a 

@@ -1,0 +1,330 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e9e40/fast && /usr/bin/make  -f CMakeFiles/cmTC_e9e40.dir/build.make CMakeFiles/cmTC_e9e40.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9e40.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -o CMakeFiles/cmTC_e9e40.dir/src.c.o -c /home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e9e40
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9e40.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD -rdynamic CMakeFiles/cmTC_e9e40.dir/src.c.o -o cmTC_e9e40 
+/usr/bin/ld: CMakeFiles/cmTC_e9e40.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e9e40.dir/build.make:106: cmTC_e9e40] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_e9e40/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3396d/fast && /usr/bin/make  -f CMakeFiles/cmTC_3396d.dir/build.make CMakeFiles/cmTC_3396d.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3396d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_3396d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3396d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3396d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_3396d.dir/CheckFunctionExists.c.o -o cmTC_3396d  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3396d.dir/build.make:106: cmTC_3396d] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_3396d/fast] Error 2
+
+
+
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6b294/fast && /usr/bin/make  -f CMakeFiles/cmTC_6b294.dir/build.make CMakeFiles/cmTC_6b294.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b294.dir/HAVE___UINT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6b294.dir/HAVE___UINT16.c.o -c /home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:27:31: error: expected ‘)’ before ‘__int16’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                     ~         ^~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:27:31: error: expected ‘)’ before ‘__int16’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                     ~         ^~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:30:12: note: in expansion of macro ‘SIZE’
+   30 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:27:31: error: expected ‘)’ before ‘__int16’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                     ~         ^~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:31:12: note: in expansion of macro ‘SIZE’
+   31 |   ('0' + ((SIZE / 100)%10)),
+      |            ^~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:27:31: error: expected ‘)’ before ‘__int16’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                     ~         ^~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:32:12: note: in expansion of macro ‘SIZE’
+   32 |   ('0' + ((SIZE / 10)%10)),
+      |            ^~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:27:31: error: expected ‘)’ before ‘__int16’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                     ~         ^~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:33:12: note: in expansion of macro ‘SIZE’
+   33 |   ('0' +  (SIZE    % 10)),
+      |            ^~~~
+make[1]: *** [CMakeFiles/cmTC_6b294.dir/build.make:85: CMakeFiles/cmTC_6b294.dir/HAVE___UINT16.c.o] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_6b294/fast] Error 2
+
+
+/home/baotong/bztree/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function dladdr exists failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f605/fast && /usr/bin/make  -f CMakeFiles/cmTC_8f605.dir/build.make CMakeFiles/cmTC_8f605.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f605.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dladdr -o CMakeFiles/cmTC_8f605.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8f605
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f605.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dladdr -rdynamic CMakeFiles/cmTC_8f605.dir/CheckFunctionExists.c.o -o cmTC_8f605 
+/usr/bin/ld: CMakeFiles/cmTC_8f605.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `dladdr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8f605.dir/build.make:106: cmTC_8f605] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_8f605/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4d91/fast && /usr/bin/make  -f CMakeFiles/cmTC_f4d91.dir/build.make CMakeFiles/cmTC_f4d91.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4d91.dir/src.cxx.o
+/usr/bin/c++   -DHAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS   -Wunnamed-type-template-args -o CMakeFiles/cmTC_f4d91.dir/src.cxx.o -c /home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wunnamed-type-template-args'
+make[1]: *** [CMakeFiles/cmTC_f4d91.dir/build.make:85: CMakeFiles/cmTC_f4d91.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_f4d91/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function get_static_proc_name exists in the unwind failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9bd11/fast && /usr/bin/make  -f CMakeFiles/cmTC_9bd11.dir/build.make CMakeFiles/cmTC_9bd11.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9bd11.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=get_static_proc_name -o CMakeFiles/cmTC_9bd11.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9bd11
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bd11.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=get_static_proc_name -rdynamic CMakeFiles/cmTC_9bd11.dir/CheckFunctionExists.c.o -o cmTC_9bd11  -lunwind 
+/usr/bin/ld: CMakeFiles/cmTC_9bd11.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `get_static_proc_name'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9bd11.dir/build.make:106: cmTC_9bd11] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_9bd11/fast] Error 2
+
+
+
+Determining if the function UnDecorateSymbolName exists in the dbghelp failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_65053/fast && /usr/bin/make  -f CMakeFiles/cmTC_65053.dir/build.make CMakeFiles/cmTC_65053.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65053.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=UnDecorateSymbolName -o CMakeFiles/cmTC_65053.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_65053
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65053.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=UnDecorateSymbolName -rdynamic CMakeFiles/cmTC_65053.dir/CheckFunctionExists.c.o -o cmTC_65053  -ldbghelp 
+/usr/bin/ld: cannot find -ldbghelp
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_65053.dir/build.make:106: cmTC_65053] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_65053/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_RWLOCK failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b37c/fast && /usr/bin/make  -f CMakeFiles/cmTC_5b37c.dir/build.make CMakeFiles/cmTC_5b37c.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b37c.dir/src.c.o
+/usr/bin/cc   -DHAVE_RWLOCK -o CMakeFiles/cmTC_5b37c.dir/src.c.o -c /home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5b37c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b37c.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_RWLOCK -rdynamic CMakeFiles/cmTC_5b37c.dir/src.c.o -o cmTC_5b37c 
+/usr/bin/ld: CMakeFiles/cmTC_5b37c.dir/src.c.o: in function `main':
+src.c:(.text+0x24): undefined reference to `pthread_rwlock_init'
+/usr/bin/ld: src.c:(.text+0x30): undefined reference to `pthread_rwlock_rdlock'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5b37c.dir/build.make:106: cmTC_5b37c] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_5b37c/fast] Error 2
+
+
+Source file was:
+
+#define _XOPEN_SOURCE 500
+#include <pthread.h>
+int main(void)
+{
+  pthread_rwlock_t l;
+  pthread_rwlock_init(&l, NULL);
+  pthread_rwlock_rdlock(&l);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE___DECLSPEC failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a4f8f/fast && /usr/bin/make  -f CMakeFiles/cmTC_a4f8f.dir/build.make CMakeFiles/cmTC_a4f8f.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4f8f.dir/src.c.o
+/usr/bin/cc   -DHAVE___DECLSPEC -o CMakeFiles/cmTC_a4f8f.dir/src.c.o -c /home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | __declspec(selectany) int a;
+      | ^~~~~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c: In function ‘__declspec’:
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c:3:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+    3 | int main(void) { return 0; }
+      |                ^
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c:2:1: warning: type of ‘selectany’ defaults to ‘int’ [-Wimplicit-int]
+    2 | __declspec(selectany) int a;
+      | ^~~~~~~~~~
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c:2:27: error: declaration for parameter ‘a’ but no such parameter
+    2 | __declspec(selectany) int a;
+      |                           ^
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.c:4: error: expected ‘{’ at end of input
+    4 | 
+      | 
+make[1]: *** [CMakeFiles/cmTC_a4f8f.dir/build.make:85: CMakeFiles/cmTC_a4f8f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_a4f8f/fast] Error 2
+
+
+Source file was:
+
+__declspec(selectany) int a;
+int main(void) { return 0; }
+
+Performing C++ SOURCE FILE Test STL_NO_NAMESPACE failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c5f03/fast && /usr/bin/make  -f CMakeFiles/cmTC_c5f03.dir/build.make CMakeFiles/cmTC_c5f03.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c5f03.dir/src.cxx.o
+/usr/bin/c++   -DSTL_NO_NAMESPACE -o CMakeFiles/cmTC_c5f03.dir/src.cxx.o -c /home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.cxx
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.cxx:3:1: error: ‘vector’ does not name a type
+    3 | vector<int> t; int main() { }
+      | ^~~~~~
+make[1]: *** [CMakeFiles/cmTC_c5f03.dir/build.make:85: CMakeFiles/cmTC_c5f03.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_c5f03/fast] Error 2
+
+
+Source file was:
+
+#include <vector>
+vector<int> t; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_MSVC_TLS failed with the following output:
+Change Dir: /home/baotong/bztree/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4947f/fast && /usr/bin/make  -f CMakeFiles/cmTC_4947f.dir/build.make CMakeFiles/cmTC_4947f.dir/build
+make[1]: Entering directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4947f.dir/src.cxx.o
+/usr/bin/c++   -DHAVE_MSVC_TLS -o CMakeFiles/cmTC_4947f.dir/src.cxx.o -c /home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.cxx
+/home/baotong/bztree/build/CMakeFiles/CMakeTmp/src.cxx:2:11: error: expected constructor, destructor, or type conversion before ‘(’ token
+    2 | __declspec(thread) int tls;
+      |           ^
+make[1]: *** [CMakeFiles/cmTC_4947f.dir/build.make:85: CMakeFiles/cmTC_4947f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/baotong/bztree/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_4947f/fast] Error 2
+
+
+Source file was:
+
+__declspec(thread) int tls;
+int main() { }
+

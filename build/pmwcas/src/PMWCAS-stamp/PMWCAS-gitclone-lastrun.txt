@@ -1,0 +1,3 @@
+repository='git@github.com:XiangpengHao/pmwcas.git'
+module=''
+tag='origin'

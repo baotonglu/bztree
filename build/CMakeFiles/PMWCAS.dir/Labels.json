@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/baotong/bztree/build/CMakeFiles/PMWCAS"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/CMakeFiles/PMWCAS.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/CMakeFiles/PMWCAS-complete.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-install.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-mkdir.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-download.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-update.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-patch.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-configure.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/build/pmwcas/src/PMWCAS-stamp/PMWCAS-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"PMWCAS"
+		],
+		"name" : "PMWCAS"
+	}
+}
