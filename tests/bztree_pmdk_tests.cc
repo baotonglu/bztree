@@ -7,6 +7,7 @@
 
 #include <glog/logging.h>
 #include <gtest/gtest.h>
+#include <iostream>
 
 #include <random>
 
@@ -20,12 +21,14 @@ class BzTreePMEMTest : public ::testing::Test {
  protected:
   bztree::BzTree *tree;
 
-  void SetUp() override {
+  void SetUp() override { 
+    std::cout << "Library initialization starts" << std::endl;
     pmwcas::InitLibrary(
         pmwcas::PMDKAllocator::Create(TEST_POOL_NAME, TEST_LAYOUT_NAME,
                                       1024 * 1024 * 1024),
         pmwcas::PMDKAllocator::Destroy, pmwcas::LinuxEnvironment::Create,
         pmwcas::LinuxEnvironment::Destroy);
+    std::cout << "Library initialization End" << std::endl;
   }
 
   void TearDown() override { pmwcas::Thread::ClearRegistry(true); }
