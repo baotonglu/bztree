@@ -4,7 +4,7 @@
 #include "util/performance_test.h"
 #include <sys/time.h>
 
-#define TEST_POOL_NAME "pool_bztree"
+#define TEST_POOL_NAME "/mnt/pmem0/baotong/pool_bztree"
 #define TEST_LAYOUT_NAME "layout_bztree"
 
 struct timeval tv1, tv2, tv3;
