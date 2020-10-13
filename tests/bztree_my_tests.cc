@@ -65,7 +65,7 @@ int main(int argc, char* argv[]){
     }
 
     static const uint32_t kMaxKey = 20000;
-    for (uint32_t i = 0; i < kMaxKey; ++i) {
+    for (int i = 0; i < kMaxKey; ++i) {
         std::string key = std::to_string(i);
         auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
         std::cout << "Debug insert key " << i << std::endl;
