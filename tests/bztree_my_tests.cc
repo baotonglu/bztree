@@ -85,9 +85,9 @@ int main(int argc, char* argv[]){
             [](auto const& a, auto const& b) { return a.first < b.first; });
     std::cout << "Start the bulk load" << std::endl;
     for(int i = 0; i < init_num_keys; i++){
-        printf("insert %d key %.10f\n", i, values[i].first);
-        //std::string key = std::to_string(values[i].first);
         std::string key = std::to_string(i);
+        printf("insert %d key %.10f, with length%d\n", i, values[i].first, key.length());
+        //std::string key = std::to_string(values[i].first);
         auto rc = bztree->Insert(key.c_str(), key.length(), values[i].second);
         if(!rc.IsOk()){
             printf("Non successful insertion in bulk load\n");
