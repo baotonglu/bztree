@@ -4,6 +4,7 @@
 #include "zipf.h"
 #include <iostream>
 #include <iomanip> 
+#include <fstream>
 
 template <class T>
 bool load_binary_data(T data[], int length, const std::string& file_path) {
