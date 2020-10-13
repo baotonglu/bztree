@@ -64,20 +64,11 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    /*
-    static const uint32_t kMaxKey = 20000;
-    for (int i = 0; i < kMaxKey; ++i) {
-        std::string key = std::to_string(i);
-        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
-        std::cout << "Debug insert key " << i << std::endl;
-    }
-    */
-
     // Combine bulk loaded keys with randomly generated payloads
     auto values = new std::pair<uint64_t, uint64_t>[init_num_keys];
     std::mt19937_64 gen_payload(std::random_device{}());
     for (int i = 0; i < init_num_keys; i++) {
-        values[i].first = static_cast<uint64_t>(keys[i]);
+        values[i].first = static_cast<KEY_TYPE>(keys[i]);
         values[i].second = static_cast<PAYLOAD_TYPE>(gen_payload());
     }
 
@@ -85,14 +76,8 @@ int main(int argc, char* argv[]){
             [](auto const& a, auto const& b) { return a.first < b.first; });
     std::cout << "Start the bulk load" << std::endl;
     for(int i = 0; i < init_num_keys; i++){
-        //std::string key = std::to_string(i);
-        //printf("insert %d key %.10f, with length %d\n", i, values[i].first, key.length());
-        std::string key = std::to_string(values[i].second);
-        std::cout << "key length is " << key.length() << std::endl;
-        std::cout << "size of key is " << sizeof(values[i].second) << std::endl;
-        //printf("insert %d key %.10f, with length %d\n", i, values[i].first, key.length());
-        //std::cout << "insert value is " << values[i].second << " with size " << sizeof(values[i].second)<< std::endl;
-        auto rc = bztree->Insert(key.c_str(), key.length(), i);
+        std::string key = std::to_string(values[i].first);
+        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
         if(!rc.IsOk()){
             printf("Non successful insertion in bulk load\n");
             exit(-1);
@@ -107,7 +92,7 @@ int main(int argc, char* argv[]){
     std::cout << "Start the pre-insertion" << std::endl;
     for (; i < num_pre_insertition; i++) {
         std::string key = std::to_string(values[i].first);
-        auto rc = bztree->Insert(key.c_str(), key.length(), static_cast<PAYLOAD_TYPE>(gen_payload()));
+        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
         if(!rc.IsOk()){
             printf("Non successful insertion in bulk load\n");
             exit(-1);
@@ -170,7 +155,7 @@ int main(int argc, char* argv[]){
     for (; i < num_keys_after_batch; i++) {
       KEY_TYPE org_key = keys[i];
       std::string key = std::to_string(org_key);
-      auto rc = bztree->Insert(key.c_str(), key.length(), static_cast<PAYLOAD_TYPE>(gen_payload()));
+      auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
       if(!rc.IsOk()){
         printf("Non successful insertion in bulk load\n");
         exit(-1);
