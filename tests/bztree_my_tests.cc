@@ -88,7 +88,8 @@ int main(int argc, char* argv[]){
         std::string key = std::to_string(i);
         printf("insert %d key %.10f, with length %d\n", i, values[i].first, key.length());
         //std::string key = std::to_string(values[i].first);
-        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+        std::cout << "insert value is " << values[i].second << std::endl;
+        auto rc = bztree->Insert(key.c_str(), key.length(), values[i].second);
         if(!rc.IsOk()){
             printf("Non successful insertion in bulk load\n");
             exit(-1);
