@@ -79,6 +79,11 @@ int main(int argc, char* argv[]){
         std::string key = std::to_string(values[i].first);
         auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
         if(!rc.IsOk()){
+            if(rc.IsKeyExists()){
+                printf("key already exists\n");
+            }else if(rc.IsInvalid()){
+                printf("Invalid!!\n");
+            }
             printf("Non successful insertion in bulk load\n");
             exit(-1);
         }
