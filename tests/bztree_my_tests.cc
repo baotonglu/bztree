@@ -65,10 +65,10 @@ int main(int argc, char* argv[]){
     }
 
     // Combine bulk loaded keys with randomly generated payloads
-    auto values = new std::pair<uint64_t, uint64_t>[init_num_keys];
+    auto values = new std::pair<KEY_TYPE, uint64_t>[init_num_keys];
     std::mt19937_64 gen_payload(std::random_device{}());
     for (int i = 0; i < init_num_keys; i++) {
-        values[i].first = static_cast<KEY_TYPE>(keys[i]);
+        values[i].first = keys[i];
         values[i].second = static_cast<PAYLOAD_TYPE>(gen_payload());
     }
 
