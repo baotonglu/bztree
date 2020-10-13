@@ -75,19 +75,15 @@ int main(int argc, char* argv[]){
     std::sort(values, values + init_num_keys,
             [](auto const& a, auto const& b) { return a.first < b.first; });
     std::cout << "Start the bulk load" << std::endl;
+    int failure_insert = 0;
     for(int i = 0; i < init_num_keys; i++){
         std::string key = std::to_string(values[i].first);
         auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
         if(!rc.IsOk()){
-            if(rc.IsKeyExists()){
-                printf("key already exists\n");
-            }else if(rc.IsInvalid()){
-                printf("Invalid!!\n");
-            }
-            printf("Non successful insertion in bulk load\n");
-            exit(-1);
+            failure_insert++;
         }
     }
+    std::cout << "Failure insert number = " << failure_insert << std::endl;
     std::cout << "End the bulk load" << std::endl;
 
     int i = init_num_keys;
@@ -162,8 +158,9 @@ int main(int argc, char* argv[]){
       std::string key = std::to_string(org_key);
       auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
       if(!rc.IsOk()){
-        printf("Non successful insertion in bulk load\n");
-        exit(-1);
+        failure_insert++;
+        //printf("Non successful insertion in bulk load\n");
+        //exit(-1);
       }
     }
     auto inserts_end_time = std::chrono::high_resolution_clock::now();
@@ -225,6 +222,7 @@ int main(int argc, char* argv[]){
             << cumulative_operations / cumulative_time * 1e9 << " ops/sec"
             << std::endl;
 
+  std::cout << "Failure insert = " << failure_insert << std::endl;
   delete[] keys;
   delete[] values;
     return 0;
