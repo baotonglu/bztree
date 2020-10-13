@@ -77,7 +77,7 @@ int main(int argc, char* argv[]){
     std::cout << "Start the bulk load" << std::endl;
     for(int i = 0; i < init_num_keys; i++){
         std::string key = std::to_string(values[i].first);
-        auto rc = bztree->Insert(key.c_str(), key.length(), vlaues[i].second);
+        auto rc = bztree->Insert(key.c_str(), key.length(), values[i].second);
         if(!rc.IsOk()){
             printf("Non successful insertion in bulk load\n");
             exit(-1);
@@ -153,7 +153,7 @@ int main(int argc, char* argv[]){
     int num_keys_after_batch = i + num_actual_inserts;
     auto inserts_start_time = std::chrono::high_resolution_clock::now();
     for (; i < num_keys_after_batch; i++) {
-      KEY_TYPE org_key = keys[j];
+      KEY_TYPE org_key = keys[i];
       std::string key = std::to_string(org_key);
       auto rc = bztree->Insert(key.c_str(), key.length(), static_cast<PAYLOAD_TYPE>(gen_payload()));
       if(!rc.IsOk()){
