@@ -64,8 +64,15 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
+    static const uint32_t kMaxKey = 20000;
+    for (uint32_t i = 0; i < kMaxKey; ++i) {
+        std::string key = std::to_string(i);
+        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+        std::cout << "Debug insert key " << i << std::endl;
+    }
+
     // Combine bulk loaded keys with randomly generated payloads
-    auto values = new std::pair<double, uint64_t>[init_num_keys];
+    auto values = new std::pair<KEY_TYPE, uint64_t>[init_num_keys];
     std::mt19937_64 gen_payload(std::random_device{}());
     for (int i = 0; i < init_num_keys; i++) {
         values[i].first = keys[i];
