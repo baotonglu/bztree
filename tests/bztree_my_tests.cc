@@ -37,7 +37,10 @@ int main(){
     for (uint64_t i = 1; i < kMaxKey; ++i) {
         std::string key = std::to_string(i);
         auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
-        ASSERT_TRUE(rc.IsOk());
+        if(!rc.IsOk()){
+            printf("Insert fails\n");
+            exit(-1);
+        }
     }
     gettimeofday(&tv2, NULL);
 
