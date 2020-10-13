@@ -88,7 +88,8 @@ int main(int argc, char* argv[]){
         //std::string key = std::to_string(i);
         //printf("insert %d key %.10f, with length %d\n", i, values[i].first, key.length());
         std::string key = std::to_string(values[i].second);
-        printf("insert %d key %.10f, with length %d\n", i, values[i].first, key.length());
+        std::cout << "key length is " << key.length() << std::endl;
+        //printf("insert %d key %.10f, with length %d\n", i, values[i].first, key.length());
         //std::cout << "insert value is " << values[i].second << " with size " << sizeof(values[i].second)<< std::endl;
         auto rc = bztree->Insert(key.c_str(), key.length(), i);
         if(!rc.IsOk()){
