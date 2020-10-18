@@ -71,7 +71,7 @@ int main(int argc, char* argv[]){
     std::mt19937_64 gen_payload(std::random_device{}());
     auto keys = new KEY_TYPE[total_num_keys];
 
-    for(int i = 0; i < init_num_keys; i++){
+    for(int i = 0; i < total_num_keys; i++){
       keys[i] = static_cast<KEY_TYPE>(gen_payload());
     }
   /*
