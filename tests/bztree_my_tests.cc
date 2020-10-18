@@ -84,25 +84,28 @@ int main(int argc, char* argv[]){
   */
     std::cout << "Start the bulk load" << std::endl;
     int failure_insert = 0;
+    int failure_search = 0;
     int key_exists = 0;
     for(int i = 0; i < init_num_keys; i++){
-        //std::string key = std::to_string(values[i].first);
-        std::cout << "load key "<< keys[i] << std::endl;
+        //std::cout << "load key "<< keys[i] << std::endl;
+        if(i%1000000 == 0){
+          std::cout << "Bulk load " << i << key << std::endl;
+        }
         char *key = reinterpret_cast<char *>(keys + i);
         auto rc = bztree->Insert(key, 8, i + 2000);
-        if(!rc.IsOk()){
-            failure_insert++;
-        }
+        // if(!rc.IsOk()){
+        //     failure_insert++;
+        // }
 
-        if(rc.IsKeyExists()){
-          key_exists++;
-          { printf("Not key eixsts\n");}
-        }
+        // if(rc.IsKeyExists()){
+        //   key_exists++;
+        //   { printf("Not key eixsts\n");}
+        // }
 
-        if(rc.IsNotFound())  { printf("Not found\n");}
-        if(rc.IsNodeFrozen())  { printf("Node frozen\n");}
-        if(rc.IsPMWCASFailure())  { printf("PMWCAS fail\n");}
-        if(rc.IsNotEnoughSpace())  { printf("Not enough space\n");}
+        // if(rc.IsNotFound())  { printf("Not found\n");}
+        // if(rc.IsNodeFrozen())  { printf("Node frozen\n");}
+        // if(rc.IsPMWCASFailure())  { printf("PMWCAS fail\n");}
+        // if(rc.IsNotEnoughSpace())  { printf("Not enough space\n");}
     }
     std::cout << "Failure insert number = " << failure_insert << std::endl;
     std::cout << "End the bulk load" << std::endl;
@@ -157,6 +160,9 @@ int main(int argc, char* argv[]){
       char *key = reinterpret_cast<char *>(lookup_keys + j);
       uint64_t payload = 0;
       auto rc = bztree->Read(key, 8, &payload);
+      if(rc == 0){
+        failure_search++;
+      }
       sum += payload;
     }
     auto lookups_end_time = std::chrono::high_resolution_clock::now();
@@ -175,16 +181,10 @@ int main(int argc, char* argv[]){
     auto inserts_start_time = std::chrono::high_resolution_clock::now();
     for (; i < num_keys_after_batch; i++) {
       char *key = reinterpret_cast<char *>(keys + i);
-      std::cout << "insert key "<< keys[i] << std::endl;
       auto rc = bztree->Insert(key, 8, i + 2000);
       if(!rc.IsOk()){
         failure_insert++;
         //exit(-1);
-      }
-
-      if(rc.IsKeyExists()){
-          key_exists++;
-         // { printf("Not key eixsts\n");}
       }
     }
     auto inserts_end_time = std::chrono::high_resolution_clock::now();
@@ -248,6 +248,7 @@ int main(int argc, char* argv[]){
 
   std::cout << "Failure insert = " << failure_insert << std::endl;
   std::cout << "key exist = " << key_exists << std::endl;
+  std::cout << "failure search = " << failure_search << std::endendl;
   delete[] keys;
     return 0;
 }
