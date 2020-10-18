@@ -17,7 +17,7 @@ struct timeval tv1, tv2, tv3;
 
 int main(int argc, char* argv[]){
     bztree::BzTree *tree;
-    pmwcas::InitLibrary(pmwcas::PMDKAllocator::Create(TEST_POOL_NAME, TEST_LAYOUT_NAME, 20UL * 1024 * 1024 * 1024),
+    pmwcas::InitLibrary(pmwcas::PMDKAllocator::Create(TEST_POOL_NAME, TEST_LAYOUT_NAME, 40UL * 1024 * 1024 * 1024),
                         pmwcas::PMDKAllocator::Destroy,
                         pmwcas::LinuxEnvironment::Create,
                         pmwcas::LinuxEnvironment::Destroy);
