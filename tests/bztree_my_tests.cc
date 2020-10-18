@@ -89,7 +89,7 @@ int main(int argc, char* argv[]){
     for(int i = 0; i < init_num_keys; i++){
         //std::cout << "load key "<< keys[i] << std::endl;
         if(i%1000000 == 0){
-          std::cout << "Bulk load " << i << key << std::endl;
+          std::cout << "Bulk load " << i << " keys" << std::endl;
         }
         char *key = reinterpret_cast<char *>(keys + i);
         auto rc = bztree->Insert(key, 8, i + 2000);
@@ -160,7 +160,7 @@ int main(int argc, char* argv[]){
       char *key = reinterpret_cast<char *>(lookup_keys + j);
       uint64_t payload = 0;
       auto rc = bztree->Read(key, 8, &payload);
-      if(rc == 0){
+      if(payload == 0){
         failure_search++;
       }
       sum += payload;
@@ -248,7 +248,7 @@ int main(int argc, char* argv[]){
 
   std::cout << "Failure insert = " << failure_insert << std::endl;
   std::cout << "key exist = " << key_exists << std::endl;
-  std::cout << "failure search = " << failure_search << std::endendl;
+  std::cout << "failure search = " << failure_search << std::endl;
   delete[] keys;
     return 0;
 }
