@@ -91,10 +91,10 @@ int main(int argc, char* argv[]){
         if(i%1000000 == 0){
           std::cout << "Bulk load " << i << " keys" << std::endl;
         }
-        //char *key = reinterpret_cast<char *>(keys + i);
-        std::string key = std::to_string(i);
-        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
-        //auto rc = bztree->Insert(key, 8, i + 2000);
+        char *key = reinterpret_cast<char *>(keys + i);
+        //std::string key = std::to_string(i);
+        //auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+        auto rc = bztree->Insert(key, 8, i + 2000);
 
     }
     std::cout << "Failure insert number = " << failure_insert << std::endl;
@@ -170,10 +170,10 @@ int main(int argc, char* argv[]){
     int num_keys_after_batch = i + num_actual_inserts;
     auto inserts_start_time = std::chrono::high_resolution_clock::now();
     for (; i < num_keys_after_batch; i++) {
-      //char *key = reinterpret_cast<char *>(keys + i);
-      //auto rc = bztree->Insert(key, 8, i + 2000);
-      std::string key = std::to_string(i);
-      auto rc = bztree->Insert(key.c_str(), key.length(), i + 200);
+      char *key = reinterpret_cast<char *>(keys + i);
+      auto rc = bztree->Insert(key, 8, i + 2000);
+      //std::string key = std::to_string(i);
+      //auto rc = bztree->Insert(key.c_str(), key.length(), i + 200);
       if(!rc.IsOk()){
         failure_insert++;
         //exit(-1);
