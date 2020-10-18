@@ -95,9 +95,13 @@ int main(int argc, char* argv[]){
 
         if(rc.IsKeyExists()){
           key_exists++;
+          { printf("Not key eixsts\n");}
         }
 
-        std::cout << "return is " << (uint64_t)rc << std::endl;
+        if(rc.IsNotFound())  { printf("Not found\n");}
+        if(rc.IsNodeFrozen())  { printf("Node frozen\n");}
+        if(rc.IsPMWCASFailure())  { printf("PMWCAS fail\n");}
+        if(rc.IsNotEnoughSpace())  { printf("Not enough space\n");}
     }
     std::cout << "Failure insert number = " << failure_insert << std::endl;
     std::cout << "End the bulk load" << std::endl;
