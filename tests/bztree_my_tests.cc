@@ -10,7 +10,7 @@
 #define TEST_POOL_NAME "/mnt/pmem0/baotong/pool_bztree"
 #define TEST_LAYOUT_NAME "layout_bztree"
 
-#define KEY_TYPE double
+#define KEY_TYPE uint64_t
 #define PAYLOAD_TYPE uint64_t
 
 struct timeval tv1, tv2, tv3;
@@ -53,7 +53,8 @@ int main(int argc, char* argv[]){
     bool print_batch_stats = get_boolean_flag(flags, "print_batch_stats");
 
     // Read keys from file
-    auto keys = new KEY_TYPE[total_num_keys];
+    
+    /*
     if (keys_file_type == "binary") {
         load_binary_data(keys, total_num_keys, keys_file_path);
     } else if (keys_file_type == "text") {
@@ -63,22 +64,31 @@ int main(int argc, char* argv[]){
                 << std::endl;
         return 1;
     }
+    */
 
     // Combine bulk loaded keys with randomly generated payloads
-    auto values = new std::pair<KEY_TYPE, uint64_t>[init_num_keys];
+    //auto values = new std::pair<KEY_TYPE, uint64_t>[init_num_keys];
     std::mt19937_64 gen_payload(std::random_device{}());
-    for (int i = 0; i < init_num_keys; i++) {
-        values[i].first = keys[i];
-        values[i].second = static_cast<PAYLOAD_TYPE>(gen_payload());
+    auto keys = new KEY_TYPE[total_num_keys];
+
+    for(int i = 0; i < init_num_keys; i++){
+      keys[i] = static_cast<KEY_TYPE>(gen_payload());
     }
+  /*
+    for (int i = 0; i < init_num_keys; i++) {
+        values[i].first = static_cast<KEY_TYPE>(gen_payload());
+        values[i].second = i + 2000;
+    }
+*/
 
     std::sort(values, values + init_num_keys,
             [](auto const& a, auto const& b) { return a.first < b.first; });
     std::cout << "Start the bulk load" << std::endl;
     int failure_insert = 0;
     for(int i = 0; i < init_num_keys; i++){
-        std::string key = std::to_string(values[i].first);
-        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+        //std::string key = std::to_string(values[i].first);
+        char *key = reinterpret_cast<char *>(keys + i);
+        auto rc = bztree->Insert(key, 8, i + 2000);
         if(!rc.IsOk()){
             failure_insert++;
         }
@@ -92,8 +102,8 @@ int main(int argc, char* argv[]){
     // Insert keys into index
     std::cout << "Start the pre-insertion" << std::endl;
     for (; i < num_pre_insertition; i++) {
-        std::string key = std::to_string(values[i].first);
-        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+        char *key = reinterpret_cast<char *>(keys + i);
+        auto rc = bztree->Insert(key, 8, i + 2000);
         if(!rc.IsOk()){
             printf("Non successful insertion in bulk load\n");
             exit(-1);
@@ -133,10 +143,9 @@ int main(int argc, char* argv[]){
     }
     auto lookups_start_time = std::chrono::high_resolution_clock::now();
     for (int j = 0; j < num_lookups_per_batch; j++) {
-      KEY_TYPE org_key = lookup_keys[j];
-      std::string key = std::to_string(org_key);
+      char *key = reinterpret_cast<char *>(lookup_keys + j);
       uint64_t payload = 0;
-      auto rc = bztree->Read(key.c_str(), key.length(), &payload);
+      auto rc = bztree->Read(key, 8, &payload);
       sum += payload;
     }
     auto lookups_end_time = std::chrono::high_resolution_clock::now();
@@ -154,9 +163,8 @@ int main(int argc, char* argv[]){
     int num_keys_after_batch = i + num_actual_inserts;
     auto inserts_start_time = std::chrono::high_resolution_clock::now();
     for (; i < num_keys_after_batch; i++) {
-      KEY_TYPE org_key = keys[i];
-      std::string key = std::to_string(org_key);
-      auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+      char *key = reinterpret_cast<char *>(keys + i);
+      auto rc = bztree->Insert(key, 8, i + 2000);
       if(!rc.IsOk()){
         failure_insert++;
         //printf("Non successful insertion in bulk load\n");
@@ -224,6 +232,5 @@ int main(int argc, char* argv[]){
 
   std::cout << "Failure insert = " << failure_insert << std::endl;
   delete[] keys;
-  delete[] values;
     return 0;
 }
