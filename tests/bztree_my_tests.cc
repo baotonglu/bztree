@@ -87,6 +87,7 @@ int main(int argc, char* argv[]){
     for(int i = 0; i < init_num_keys; i++){
         //std::string key = std::to_string(values[i].first);
         char *key = reinterpret_cast<char *>(keys + i);
+        key[7] = '\0';
         auto rc = bztree->Insert(key, 8, i + 2000);
         if(!rc.IsOk()){
             failure_insert++;
