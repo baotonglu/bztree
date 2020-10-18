@@ -17,7 +17,7 @@ struct timeval tv1, tv2, tv3;
 
 int main(int argc, char* argv[]){
     bztree::BzTree *tree;
-    pmwcas::InitLibrary(pmwcas::PMDKAllocator::Create(TEST_POOL_NAME, TEST_LAYOUT_NAME, 10UL * 1024 * 1024 * 1024),
+    pmwcas::InitLibrary(pmwcas::PMDKAllocator::Create(TEST_POOL_NAME, TEST_LAYOUT_NAME, 20UL * 1024 * 1024 * 1024),
                         pmwcas::PMDKAllocator::Destroy,
                         pmwcas::LinuxEnvironment::Create,
                         pmwcas::LinuxEnvironment::Destroy);
@@ -91,21 +91,11 @@ int main(int argc, char* argv[]){
         if(i%1000000 == 0){
           std::cout << "Bulk load " << i << " keys" << std::endl;
         }
-        char *key = reinterpret_cast<char *>(keys + i);
-        auto rc = bztree->Insert(key, 8, i + 2000);
-        // if(!rc.IsOk()){
-        //     failure_insert++;
-        // }
+        //char *key = reinterpret_cast<char *>(keys + i);
+        std::string key = std::to_string(i);
+        auto rc = bztree->Insert(key.c_str(), key.length(), i + 2000);
+        //auto rc = bztree->Insert(key, 8, i + 2000);
 
-        // if(rc.IsKeyExists()){
-        //   key_exists++;
-        //   { printf("Not key eixsts\n");}
-        // }
-
-        // if(rc.IsNotFound())  { printf("Not found\n");}
-        // if(rc.IsNodeFrozen())  { printf("Node frozen\n");}
-        // if(rc.IsPMWCASFailure())  { printf("PMWCAS fail\n");}
-        // if(rc.IsNotEnoughSpace())  { printf("Not enough space\n");}
     }
     std::cout << "Failure insert number = " << failure_insert << std::endl;
     std::cout << "End the bulk load" << std::endl;
@@ -180,8 +170,10 @@ int main(int argc, char* argv[]){
     int num_keys_after_batch = i + num_actual_inserts;
     auto inserts_start_time = std::chrono::high_resolution_clock::now();
     for (; i < num_keys_after_batch; i++) {
-      char *key = reinterpret_cast<char *>(keys + i);
-      auto rc = bztree->Insert(key, 8, i + 2000);
+      //char *key = reinterpret_cast<char *>(keys + i);
+      //auto rc = bztree->Insert(key, 8, i + 2000);
+      std::string key = std::to_string(i);
+      auto rc = bztree->Insert(key.c_str(), key.length(), i + 200);
       if(!rc.IsOk()){
         failure_insert++;
         //exit(-1);
