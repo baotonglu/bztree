@@ -177,8 +177,12 @@ int main(int argc, char* argv[]){
       auto rc = bztree->Insert(key, 8, i + 2000);
       if(!rc.IsOk()){
         failure_insert++;
-        //printf("Non successful insertion in bulk load\n");
         //exit(-1);
+      }
+
+      if(rc.IsKeyExists()){
+          key_exists++;
+         // { printf("Not key eixsts\n");}
       }
     }
     auto inserts_end_time = std::chrono::high_resolution_clock::now();
