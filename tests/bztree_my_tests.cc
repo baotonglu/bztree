@@ -79,10 +79,9 @@ int main(int argc, char* argv[]){
         values[i].first = static_cast<KEY_TYPE>(gen_payload());
         values[i].second = i + 2000;
     }
-*/
-
     std::sort(values, values + init_num_keys,
             [](auto const& a, auto const& b) { return a.first < b.first; });
+  */
     std::cout << "Start the bulk load" << std::endl;
     int failure_insert = 0;
     for(int i = 0; i < init_num_keys; i++){
