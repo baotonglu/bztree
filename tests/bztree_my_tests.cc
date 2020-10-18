@@ -87,6 +87,7 @@ int main(int argc, char* argv[]){
     int key_exists = 0;
     for(int i = 0; i < init_num_keys; i++){
         //std::string key = std::to_string(values[i].first);
+        std::cout << "load key "<< keys[i] << std::endl;
         char *key = reinterpret_cast<char *>(keys + i);
         auto rc = bztree->Insert(key, 8, i + 2000);
         if(!rc.IsOk()){
@@ -174,6 +175,7 @@ int main(int argc, char* argv[]){
     auto inserts_start_time = std::chrono::high_resolution_clock::now();
     for (; i < num_keys_after_batch; i++) {
       char *key = reinterpret_cast<char *>(keys + i);
+      std::cout << "insert key "<< keys[i] << std::endl;
       auto rc = bztree->Insert(key, 8, i + 2000);
       if(!rc.IsOk()){
         failure_insert++;
