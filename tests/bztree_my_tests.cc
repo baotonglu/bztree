@@ -84,6 +84,7 @@ int main(int argc, char* argv[]){
   */
     std::cout << "Start the bulk load" << std::endl;
     int failure_insert = 0;
+    int key_exists = 0;
     for(int i = 0; i < init_num_keys; i++){
         //std::string key = std::to_string(values[i].first);
         char *key = reinterpret_cast<char *>(keys + i);
@@ -91,6 +92,10 @@ int main(int argc, char* argv[]){
         auto rc = bztree->Insert(key, 8, i + 2000);
         if(!rc.IsOk()){
             failure_insert++;
+        }
+
+        if(rc.IsKeyExists()){
+          key_exists++;
         }
     }
     std::cout << "Failure insert number = " << failure_insert << std::endl;
@@ -231,6 +236,7 @@ int main(int argc, char* argv[]){
             << std::endl;
 
   std::cout << "Failure insert = " << failure_insert << std::endl;
+  std::cout << "key exist = " << key_exists << std::endl;
   delete[] keys;
     return 0;
 }
