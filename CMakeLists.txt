@@ -61,7 +61,7 @@ add_definitions(-DBUILD_TESTS)
 message(STATUS "BUILD_TESTS: defined")
 
 ##################### PMwCAS #########################
-add_definitions(-DDESC_CAP=16)
+#add_definitions(-DDESC_CAP=16)
 FetchContent_Declare(
         pmwcas
         GIT_REPOSITORY https://github.com/XiangpengHao/pmwcas.git

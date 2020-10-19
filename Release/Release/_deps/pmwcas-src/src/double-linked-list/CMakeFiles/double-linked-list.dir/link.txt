@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdouble-linked-list.a CMakeFiles/double-linked-list.dir/doubly_linked_list.cc.o
+/usr/bin/ranlib libdouble-linked-list.a

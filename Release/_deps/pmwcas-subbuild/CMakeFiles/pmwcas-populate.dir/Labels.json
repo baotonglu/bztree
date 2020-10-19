@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/CMakeFiles/pmwcas-populate"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/CMakeFiles/pmwcas-populate.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/CMakeFiles/pmwcas-populate-complete.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-install.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-download.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-update.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-patch.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-configure.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-build.rule"
+		},
+		{
+			"file" : "/home/baotong/bztree/Release/_deps/pmwcas-subbuild/pmwcas-populate-prefix/src/pmwcas-populate-stamp/pmwcas-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pmwcas-populate"
+		],
+		"name" : "pmwcas-populate"
+	}
+}

@@ -1,0 +1,16 @@
+# CMake generated Testfile for 
+# Source directory: /home/baotong/bztree/Release/_deps/pmwcas-src/src/environment
+# Build directory: /home/baotong/bztree/Release/Release/_deps/pmwcas-src/src/environment
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(FileTest.Read "/home/baotong/bztree/Release/Release/_deps/pmwcas-src/src/environment/environment_tests" "--gtest_filter=FileTest.Read")
+set_tests_properties(FileTest.Read PROPERTIES  _BACKTRACE_TRIPLES "/usr/share/cmake-3.18/Modules/GoogleTest.cmake;378;add_test;/home/baotong/bztree/Release/_deps/pmwcas-src/CMakeLists.txt;172;gtest_add_tests;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;7;ADD_PMWCAS_TEST;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;0;")
+add_test(FileTest.Write "/home/baotong/bztree/Release/Release/_deps/pmwcas-src/src/environment/environment_tests" "--gtest_filter=FileTest.Write")
+set_tests_properties(FileTest.Write PROPERTIES  _BACKTRACE_TRIPLES "/usr/share/cmake-3.18/Modules/GoogleTest.cmake;378;add_test;/home/baotong/bztree/Release/_deps/pmwcas-src/CMakeLists.txt;172;gtest_add_tests;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;7;ADD_PMWCAS_TEST;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;0;")
+add_test(FileTest.ReadWrite "/home/baotong/bztree/Release/Release/_deps/pmwcas-src/src/environment/environment_tests" "--gtest_also_run_disabled_tests" "--gtest_filter=FileTest.DISABLED_ReadWrite")
+set_tests_properties(FileTest.ReadWrite PROPERTIES  DISABLED "TRUE" _BACKTRACE_TRIPLES "/usr/share/cmake-3.18/Modules/GoogleTest.cmake;366;add_test;/home/baotong/bztree/Release/_deps/pmwcas-src/CMakeLists.txt;172;gtest_add_tests;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;7;ADD_PMWCAS_TEST;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;0;")
+add_test(ThreadpoolTest.Schedule "/home/baotong/bztree/Release/Release/_deps/pmwcas-src/src/environment/environment_tests" "--gtest_also_run_disabled_tests" "--gtest_filter=ThreadpoolTest.DISABLED_Schedule")
+set_tests_properties(ThreadpoolTest.Schedule PROPERTIES  DISABLED "TRUE" _BACKTRACE_TRIPLES "/usr/share/cmake-3.18/Modules/GoogleTest.cmake;366;add_test;/home/baotong/bztree/Release/_deps/pmwcas-src/CMakeLists.txt;172;gtest_add_tests;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;7;ADD_PMWCAS_TEST;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;0;")
+add_test(SharedMemoryTest.AttachDetach "/home/baotong/bztree/Release/Release/_deps/pmwcas-src/src/environment/environment_tests" "--gtest_also_run_disabled_tests" "--gtest_filter=SharedMemoryTest.DISABLED_AttachDetach")
+set_tests_properties(SharedMemoryTest.AttachDetach PROPERTIES  DISABLED "TRUE" _BACKTRACE_TRIPLES "/usr/share/cmake-3.18/Modules/GoogleTest.cmake;366;add_test;/home/baotong/bztree/Release/_deps/pmwcas-src/CMakeLists.txt;172;gtest_add_tests;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;7;ADD_PMWCAS_TEST;/home/baotong/bztree/Release/_deps/pmwcas-src/src/environment/CMakeLists.txt;0;")
