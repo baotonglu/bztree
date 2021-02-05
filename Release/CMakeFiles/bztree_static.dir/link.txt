@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbztree_static.a CMakeFiles/bztree_static.dir/bztree.cc.o
-/usr/bin/ranlib libbztree_static.a

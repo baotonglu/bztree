@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wno-long-long -pedantic -fPIC -lrt -march=native -O3 -Ofast -O3 -DNDEBUG -rdynamic CMakeFiles/gflags_strip_flags_test.dir/gflags_strip_flags_test.cc.o -o ../bin/gflags_strip_flags_test  ../libgflags_nothreads.a 

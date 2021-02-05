@@ -38,4 +38,7 @@ cmake-build*
 .idea
 .vscode
 build
-release
+build/
+Release
+Release/
+
