@@ -64,7 +64,7 @@ message(STATUS "BUILD_TESTS: defined")
 
 ##################### PMwCAS #########################
 #add_definitions(-DDESC_CAP=16)
-set(DESC_CAP 16 CACHE STRING "Set desc cap to 16")
+set(DESC_CAP 16 CACHE INTERNAL "Set desc cap to 16")
 FetchContent_Declare(
         pmwcas
         GIT_REPOSITORY https://github.com/XiangpengHao/pmwcas.git
