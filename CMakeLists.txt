@@ -71,10 +71,11 @@ FetchContent_Declare(
         GIT_TAG v2.0
 )
 FetchContent_GetProperties(pmwcas)
+include_directories(${pmwcas_SOURCE_DIR} ${pmwcas_SOURCE_DIR}/src ${pmwcas_SOURCE_DIR}/include)
+include_directories(${pmwcas_BINARY_DIR})
 if (NOT pmwcas_POPULATED)
     FetchContent_Populate(pmwcas)
-    add_subdirectory(${pmwcas_SOURCE_DIR} ${pmwcas_BINARY_DIR})
-    include_directories(${pmwcas_SOURCE_DIR} ${pmwcas_SOURCE_DIR}/src ${pmwcas_SOURCE_DIR}/include)
+    add_subdirectory(${pmwcas_SOURCE_DIR} ${pmwcas_BINARY_DIR})    
     PMWCAS_DEFINE_ENV()
 endif()
 
