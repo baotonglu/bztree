@@ -73,7 +73,7 @@ FetchContent_Declare(
 FetchContent_GetProperties(pmwcas)
 if (NOT pmwcas_POPULATED)
     FetchContent_Populate(pmwcas)
-    add_subdirectory(${pmwcas_SOURCE_DIR})
+    add_subdirectory(${pmwcas_SOURCE_DIR} ${pmwcas_BINARY_DIR})
     include_directories(${pmwcas_SOURCE_DIR} ${pmwcas_SOURCE_DIR}/src ${pmwcas_SOURCE_DIR}/include)
     PMWCAS_DEFINE_ENV()
 endif()
